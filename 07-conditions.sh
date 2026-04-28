@@ -1,7 +1,7 @@
 #!/bin/bash
 #Greater than and Less than
 
-NUMBER=12
+NUMBER=$1
 
 if [ "$NUMBER" -lt 10 ];  then
     echo "Given number $NUMBER is Less than 10"
