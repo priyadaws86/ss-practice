@@ -10,7 +10,7 @@ echo "Sum of $NUMBER1 and $NUMBER2 is $SUM"
 
 LEADERS="Modi, Rahul, Kejriwal"
 
-echo "All Leaders: ${LEADERS}[$@]"
+echo "All Leaders: ${LEADERS[$@]}"
 
 
 
