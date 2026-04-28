@@ -12,8 +12,30 @@ dnf install mysql -y
 
 
 if [ $? -ne 0 ]; then
-    echo "ERROR: Installation failed"
+    echo "ERROR: MYSQL Installation failed"
     exit 1
 else
-    echo "Installation successful"
+    echo "MYSQL Installation successful"
 fi
+
+
+dnf install nginx -y
+
+if [ $? -ne 0 ]; then
+    echo "ERROR: NGINX Installation failed"
+    exit 1
+else
+    echo "NGINX Installation successful"
+fi
+     
+dnf install python3 -y
+
+if [ $? -ne 0 ]; then
+    echo "ERROR: Python3 Installation failed"
+    exit 1
+else
+    echo "Python3 Installation successful"
+fi
+
+
+
