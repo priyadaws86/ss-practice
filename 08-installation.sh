@@ -3,18 +3,23 @@
 
 USERID=$(id -u)
 
+R="\e[31m"
+G="\e[32m"
+Y="\e[33m"
+N="\e[0m"
+
 if [ $USERID -ne 0 ]; then
-    echo "Error:: Please run this script with root privilages"
+    echo -e "$R Error:: Please run this script with root privilages $N"
     exit 1
 fi
 
 VALIDATE(){
 
     if [ $1 -ne 0 ]; then
-        echo "ERROR: $2 Installation failed"
+        echo -e "$R ERROR: $2 Installation failed $N"
         exit 1
     else
-        echo "$2 Installation successful"
+        echo -e "$G $2 Installation successful $N"
     fi
 }
 
