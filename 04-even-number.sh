@@ -1,7 +1,7 @@
 #!/bin/bash
 #Print even number
 
-NUMBER=10
+read NUMBER
 
 if [ $((NUMBER % 2)) -eq 0 ]
 then
