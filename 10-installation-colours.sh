@@ -33,7 +33,7 @@ fi
 
 dnf list installed nginx
 if [ $? -ne 0 ]; then
-     install dnf nginx -y
+     dnf install nginx -y
      VALIDATE $? "NGINX"
 else
     echo -e "NGINX already installed... $Y SKIPPING $N"
