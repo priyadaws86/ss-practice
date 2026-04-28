@@ -11,5 +11,5 @@ echo "Sum of $NUMBER1 and $NUMBER2 is $SUM"
 LEADERS="Modi, Rahul, Kejriwal"
 
 echo "All Leaders: ${LEADERS[@]}"
-echo "First Leader: ${LEADERS[$0]}"
-echo "Second Leader: ${LEADERS[$1]}"
+echo "First Leader: ${LEADERS[0]}"
+echo "Second Leader: ${LEADERS[1]}"
