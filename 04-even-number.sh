@@ -3,7 +3,7 @@
 
 NUMBER=10
 
-if [$((NUMBER % 2)) -EQ 0]
+if [ $((NUMBER % 2)) -eq 0 ]
 then
     echo "Given number $NUMBER is even"
     else
