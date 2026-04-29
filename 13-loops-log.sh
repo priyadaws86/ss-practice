@@ -38,7 +38,7 @@ VALIDATE(){
         dnf install $package -y &>>$LOG_FILE
        
         # if exit status is 0, already installed, else not installed
-       if [$? -ne 0 ]; then
+       if [ $? -ne 0 ]; then
             dnf install $package -y &>>$LOG_FILE
             VALIDATE $? "$package"
          else
