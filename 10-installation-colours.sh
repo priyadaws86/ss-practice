@@ -14,8 +14,7 @@ if [ $USERID -ne 0 ]; then
 fi
 
 VALIDATE(){
-
-    if [ $1 -ne 0 ]; then
+   if [ $1 -ne 0 ]; then
         echo -e "$R ERROR: $2 Installation failed $N"
         exit 1
     else
