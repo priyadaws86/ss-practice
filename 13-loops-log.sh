@@ -44,4 +44,4 @@ VALIDATE(){
          else
             echo -e "$package already installed... $Y SKIPPING $N"
         fi
-    done      
+    done       
